@@ -5,6 +5,7 @@ from utils.feed_database_from_json import (
     insert_driver_data_into_driver_table,
     insert_car_data_into_car_table
 )
+from queries_test.queries import read_query
 
 
 def create_all_tables():
@@ -23,9 +24,16 @@ def create_all_tables():
 
 def create_tables_all_process():
     #create and feed tables
+    connection = create_db_connection(host_name="localhost",user_name="mankat",user_password="0xfa0xff",db_name="bnzsa")
     
     create_all_tables()
-    data_drivers = load_drivers_europe_json()
-    insert_driver_data_into_driver_table(data_drivers)
-    data_cars = load_cars_europe_json()
-    insert_car_data_into_car_table(data_cars)
+    
+    # Prevent insert duplicated data into tables
+    check_if_table_is_empty_query ="""SELECT * FROM spain_cars"""
+    result = read_query(connection,check_if_table_is_empty_query)
+    
+    if len(result) == 0 :
+        data_drivers = load_drivers_europe_json()
+        insert_driver_data_into_driver_table(data_drivers)
+        data_cars = load_cars_europe_json()
+        insert_car_data_into_car_table(data_cars)

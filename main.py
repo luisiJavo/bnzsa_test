@@ -20,7 +20,7 @@ if __name__ == '__main__':
     #1.1 - Select simple
     question_1_1()
     
-    # 1.2 - Select avanzado
+    # 1.2 - Select advanced
     question_1_2()
 
     # 1.3 - Create
