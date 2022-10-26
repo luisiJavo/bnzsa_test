@@ -13,3 +13,12 @@ This project
 * Fixes some errors.
 
 **You must go to develop branch to see the code.**
+
+## Project structure
+* bnzsa
+    - config
+    - docs
+    - queries_test
+    - questions
+    - utils
+    - main.py
