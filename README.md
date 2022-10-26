@@ -1,7 +1,15 @@
 # bnzsa_test
 This project 
-* creates a database.
-* Feed database from two json files  
-    cars_europe.json
-    drivers_europe.json
-* Make queries
+* Creates a database.
+* Feeds database from two json files  
+    1. cars_europe.json
+    2. drivers_europe.json
+* Makes queries
+    1. Select simple.
+    2. Select advanced.
+    3. Create new table.
+    4. Feed this new table.
+    
+* Fixes some errors.
+
+**You must go to develop branch to see the code.**
