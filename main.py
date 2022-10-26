@@ -30,7 +30,7 @@ if __name__ == '__main__':
     question_1_4()
     
     # 2.1 Utf
-    # CREATE DATABASE bnzsa  CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+    # Using this command: CREATE DATABASE bnzsa  CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
     question_2_1()
 
     # 2.2 Dataframe
