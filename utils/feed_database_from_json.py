@@ -18,32 +18,26 @@ def insert_driver_data_into_driver_table(data_driver):
     mycursor = connection.cursor()
     
     for driver in data_driver:
-        if driver["country"] == "spain":
+        if driver["country"] == "Spain":
             sql = "INSERT INTO spain_drivers(full_name, age) VALUES (%s, %s)"
             val = (driver["full_name"], driver["age"])
             mycursor.execute(sql, val)
 
             connection.commit()
 
-            # print(mycursor.rowcount, "record inserted.")
-
-        if driver["country"] == "france":
+        if driver["country"] == "France":
             sql = "INSERT INTO france_drivers(full_name, age) VALUES (%s, %s)"
             val = (driver["full_name"], driver["age"])
             mycursor.execute(sql, val)
 
             connection.commit()
 
-            # print(mycursor.rowcount, "record inserted.")
-
-        if driver["country"] == "germany":
+        if driver["country"] == "Germany":
             sql = "INSERT INTO germany_drivers(full_name, age) VALUES (%s, %s)"
             val = (driver["full_name"], driver["age"])
             mycursor.execute(sql, val)
 
             connection.commit()
-
-            # print(mycursor.rowcount, "record inserted.")
 
 
 def insert_car_data_into_car_table(data_car):
@@ -51,30 +45,23 @@ def insert_car_data_into_car_table(data_car):
     mycursor = connection.cursor()
     
     for car in data_car:
-        if car["country"] == "spain":
+        if car["country"] == "Spain":
             sql = "INSERT INTO spain_cars(plate,brand,model,color,driver_id) VALUES (%s, %s, %s, %s, %s)"
             val = (car["plate"], car["brand"], car["model"], car["color"], car["drive_id"] )
             mycursor.execute(sql, val)
 
             connection.commit()
-
-            # print(mycursor.rowcount, "record inserted.")
         
-        if car["country"] == "france":
+        if car["country"] == "France":
             sql = "INSERT INTO france_cars(plate,brand,model,color,driver_id) VALUES (%s, %s, %s, %s, %s)"
             val = (car["plate"], car["brand"], car["model"], car["color"], car["drive_id"] )
             mycursor.execute(sql, val)
 
             connection.commit()
 
-            # print(mycursor.rowcount, "record inserted.")
-
-        if car["country"] == "germany":
+        if car["country"] == "Germany":
             sql = "INSERT INTO germany_cars(plate,brand,model,color,driver_id) VALUES (%s, %s, %s, %s, %s)"
             val = (car["plate"], car["brand"], car["model"], car["color"], car["drive_id"] )
             mycursor.execute(sql, val)
 
             connection.commit()
-
-            # print(mycursor.rowcount, "record inserted.")
-        

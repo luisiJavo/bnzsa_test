@@ -2,46 +2,46 @@
     {
         "full_name":"Pedro López",
         "age":26,
-        "country":"spain"
+        "country":"Spain"
     },
     {
         "full_name":"Luis Pérez",
         "age":18,
-        "country":"spain"
+        "country":"Spain"
     },
     {
         "full_name":"Manuel García",
         "age":45,
-        "country":"spain"
+        "country":"Spain"
     },
     {
         "full_name":"Benoît Dubois",
         "age":20,
-        "country":"france"
+        "country":"France"
     },
     {
         "full_name":"Charlotte",
         "age":26,
-        "country":"france"
+        "country":"France"
     },
     {
         "full_name":"Celine",
         "age":22,
-        "country":"france"
+        "country":"France"
     },
     {
         "full_name":"Günther Müller",
         "age":30,
-        "country":"germany"
+        "country":"Germany"
     },
     {
         "full_name":"Gertrud",
         "age":32,
-        "country":"germany"
+        "country":"Germany"
     },
     {
         "full_name":"Katharina",
         "age":47,
-        "country":"germany"
+        "country":"Germany"
     }
 ]

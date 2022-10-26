@@ -3,7 +3,7 @@
         "plate":"1234CLZ",
         "brand":"Seat",
         "model":"Ibiza",
-        "country":"spain",
+        "country":"Spain",
         "color":"Blue",
         "drive_id":1
     },
@@ -11,7 +11,7 @@
         "plate":"2356KNM",
         "brand":"Kia",
         "model":"Sport",
-        "country":"spain",
+        "country":"Spain",
         "color":"Red",
         "drive_id":2
     },
@@ -19,7 +19,7 @@
         "plate":"0342KAC",
         "brand":"Renault",
         "model":"Megane",
-        "country":"spain",
+        "country":"Spain",
         "color":"Red",
         "drive_id":3
     },
@@ -27,7 +27,7 @@
         "plate":"9701BNX",
         "brand":"Seat",
         "model":"Ibiza",
-        "country":"france",
+        "country":"France",
         "color":"Blue",
         "drive_id":1
     },
@@ -35,7 +35,7 @@
         "plate":"4433GFT",
         "brand":"Kia",
         "model":"Sport",
-        "country":"france",
+        "country":"France",
         "color":"Red",
         "drive_id":2
     },
@@ -43,7 +43,7 @@
         "plate":"6512CXZ",
         "brand":"Renault",
         "model":"Megane",
-        "country":"france",
+        "country":"France",
         "color":"Black",
         "drive_id":3
     },
@@ -51,7 +51,7 @@
         "plate":"0078CVB",
         "brand":"Seat",
         "model":"Ibiza",
-        "country":"germany",
+        "country":"Germany",
         "color":"Blue",
         "drive_id":1
     },
@@ -59,7 +59,7 @@
         "plate":"1928GAD",
         "brand":"Kia",
         "model":"Sport",
-        "country":"germany",
+        "country":"Germany",
         "color":"Red",
         "drive_id":2
     },
@@ -67,7 +67,7 @@
         "plate":"8896JJJ",
         "brand":"Renault",
         "model":"Megane",
-        "country":"germany",
+        "country":"Germany",
         "color":"Black",
         "drive_id":3
     },
@@ -75,7 +75,7 @@
         "plate":"1111AAA",
         "brand":"BMW",
         "model":"Xclusive",
-        "country":"germany",
+        "country":"Germany",
         "color":"Black",
         "drive_id":null
     }
