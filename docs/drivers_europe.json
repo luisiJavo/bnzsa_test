@@ -1,0 +1,47 @@
+[
+    {
+        "full_name":"Pedro Lopez",
+        "age":26,
+        "country":"spain"
+    },
+    {
+        "full_name":"Luis Perez",
+        "age":18,
+        "country":"spain"
+    },
+    {
+        "full_name":"Manuel Garcia",
+        "age":45,
+        "country":"spain"
+    },
+    {
+        "full_name":"Amelie",
+        "age":20,
+        "country":"france"
+    },
+    {
+        "full_name":"Charlotte",
+        "age":26,
+        "country":"france"
+    },
+    {
+        "full_name":"Celine",
+        "age":22,
+        "country":"france"
+    },
+    {
+        "full_name":"Anke",
+        "age":30,
+        "country":"germany"
+    },
+    {
+        "full_name":"Gertrud",
+        "age":32,
+        "country":"germany"
+    },
+    {
+        "full_name":"Katharina",
+        "age":47,
+        "country":"germany"
+    }
+]
