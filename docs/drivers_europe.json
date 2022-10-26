@@ -1,21 +1,21 @@
 [
     {
-        "full_name":"Pedro Lopez",
+        "full_name":"Pedro López",
         "age":26,
         "country":"spain"
     },
     {
-        "full_name":"Luis Perez",
+        "full_name":"Luis Pérez",
         "age":18,
         "country":"spain"
     },
     {
-        "full_name":"Manuel Garcia",
+        "full_name":"Manuel García",
         "age":45,
         "country":"spain"
     },
     {
-        "full_name":"Amelie",
+        "full_name":"Benoît Dubois",
         "age":20,
         "country":"france"
     },
@@ -30,7 +30,7 @@
         "country":"france"
     },
     {
-        "full_name":"Anke",
+        "full_name":"Günther Müller",
         "age":30,
         "country":"germany"
     },

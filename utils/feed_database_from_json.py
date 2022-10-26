@@ -37,7 +37,7 @@ def insert_driver_data_into_driver_table(data_driver):
             # print(mycursor.rowcount, "record inserted.")
 
         if driver["country"] == "germany":
-            sql = "INSERT INTO germany_drivermycursor = mydb.cursor()s(full_name, age) VALUES (%s, %s)"
+            sql = "INSERT INTO germany_drivers(full_name, age) VALUES (%s, %s)"
             val = (driver["full_name"], driver["age"])
             mycursor.execute(sql, val)
 

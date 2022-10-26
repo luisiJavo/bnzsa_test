@@ -11,6 +11,8 @@ from queries_test.queries import (
     execute_query
     )
 
+import pandas as pd    
+
 if __name__ == '__main__':
     # create database if not exists
     # mycursor = mydb.cursor()
@@ -45,11 +47,27 @@ if __name__ == '__main__':
 
     # 1.3 - Create
     """
-    Crea una tabla en la que se pueda almacenar la información obtenida con el SELECT anterior:"""
-    create_query = """
+    Crea una tabla en la que se pueda almacenar la información obtenida con el SELECT anterior:
+    First step -> create europe_drivers_cars table to contain plate and driver_full_name fields.
+    Second step -> Insert into europe_drivers_cars table the query results .
+    """
+    create_table_query = """
     CREATE TABLE IF NOT EXISTS europe_drivers_cars (id INT NOT NULL AUTO_INCREMENT, plate VARCHAR(100), driver_full_name VARCHAR(255), PRIMARY KEY (id))
     """
-    execute_query(connection=connection, query=create_query)
+    execute_query(connection=connection, query=create_table_query)
+    advanced_query_insert="""
+    INSERT INTO europe_drivers_cars(plate,driver_full_name) SELECT spain_cars.plate,spain_drivers.full_name from spain_cars JOIN spain_drivers WHERE spain_cars.driver_id = spain_drivers.id UNION SELECT france_cars.plate,france_drivers.full_name from france_cars JOIN france_drivers WHERE france_cars.driver_id = france_drivers.id UNION SELECT germany_cars.plate,germany_drivers.full_name from germany_cars JOIN germany_drivers WHERE germany_cars.driver_id = germany_drivers.id
+    """
+    result_advanced_insert = execute_query(connection, advanced_query_insert)
+    
+    # 2.1 Utf
+    # CREATE DATABASE bnzsa  CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
 
+    # 2.2 Dataframe
+    df = pd.read_sql(advanced_query, con=connection)
+    # print(df)
+    countries = ["spain","spain","spain","france","france","france","germany","germany","germany"]
+    df["countries"] = countries
+    print(df)
 
 
