@@ -17,8 +17,16 @@ This project
 ## Project structure
 * bnzsa
     - config
+        - database_data.py 
     - docs
+        - cars_europe.json
+        - drivers_europe.json
     - queries_test
+        - queries.py
     - questions
+        - questions.py
     - utils
+        - create_database.py
+        - create_tables.py
+        - feed_database_from_json.py
     - main.py
